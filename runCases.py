@@ -21,12 +21,12 @@ runner.run(mysuite)
 
 
 # 只需要改这些即可，开始
-smtpserver = 'smtp.163.com'
-username = 'testfan_aguo@163.com'
-password = 'testfan123'     # 设置客户端授权码 的 密码
-sender = 'testfan_aguo@163.com'
+smtpserver = 'smtp.qq.com'
+username = '503112125'
+password = 'xswofbohnvaybggj'     # 设置客户端授权码 的 密码
+sender = '503112125@qq.com'
 # 收件人为多个收件人
-receiver = ['testfan_aguo@163.com']
+receiver = ['503112125@qq.com', 'testfan_aguo@163.com']
 subject = 'Python email test'
 mailbody = "Hi!\nHow are you?\nHere is the link you wanted:\nhttp://www.testfan.cn\n From 慢慢"
 attachfile = res_file
@@ -35,7 +35,7 @@ attachfile = res_file
 
 msg = MIMEMultipart('mixed')
 msg['Subject'] = subject
-msg['From'] = 'Testfan_AGuo@163.com <testfan_aguo@163.com>'
+msg['From'] = '503112125@qq.com <503112125@qq.com>'
 # 收件人为多个收件人,通过join将列表转换为以;为间隔的字符串
 msg['To'] = ";".join(receiver)
 
